@@ -36,6 +36,6 @@ app.post("/speak", async (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Piper Proxy server running on http://localhost:${PORT}`);
-});
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Piper Proxy server running on http://localhost:${PORT}`);
+  });
